@@ -78,16 +78,16 @@ class App extends Component {
   renderList(){
     return this.state.contacts.map((artista, index) => {
       return (
-        <div>
-          <Artista 
-            key= {index}
-            index={index}
-            //picture= {artista.pictureUrl}
-            name={artista.name}
-            popularity= {artista.popularity}
-            onDelete= {this.handleDelete}
-          />
-        </div>
+      
+        <Artista 
+          key= {index}
+          index={index}
+          //picture= {artista.pictureUrl}
+          name={artista.name}
+          popularity= {artista.popularity}
+          onDelete= {this.handleDelete}
+        />
+       
       )
         
     })
